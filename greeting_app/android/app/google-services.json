@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "954254617055",
-    "project_id": "greeting-80bc1",
-    "storage_bucket": "greeting-80bc1.appspot.com"
+    "project_number": "662459412516",
+    "project_id": "greetingapp-c0944",
+    "storage_bucket": "greetingapp-c0944.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:954254617055:android:e051d9366fa4aa7b8b7c6a",
+        "mobilesdk_app_id": "1:662459412516:android:85549a6a3f5d16ccfea8b1",
         "android_client_info": {
           "package_name": "com.example.greeting_app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "954254617055-2ve8ug3pdgc3p10l3o0q5umjopq53fbj.apps.googleusercontent.com",
+          "client_id": "662459412516-1dbhq10j3ipm7h0nss277oatutq88hls.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA66fNRJbLVz7uQ8KlvhGYkXRBX3TE1i6U"
+          "current_key": "AIzaSyARRACZHcpLGD-0Oy8AyYB7UGDcbiEIkDw"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "954254617055-2ve8ug3pdgc3p10l3o0q5umjopq53fbj.apps.googleusercontent.com",
+              "client_id": "662459412516-1dbhq10j3ipm7h0nss277oatutq88hls.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

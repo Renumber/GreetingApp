@@ -32,7 +32,7 @@ Future<Map<String, List<Greeting>>> getGreetingsServer() async {
   categoryList.forEach((element) {
     greetings[element] = [];
   });
-  var collection = FirebaseFirestore.instance.collection('greetingData2');
+  var collection = FirebaseFirestore.instance.collection('GreetingData2');
   var querySnapshot = await collection.get();
   int cnt = 0;
   print("len : ${querySnapshot.docs.length}");
@@ -40,13 +40,13 @@ Future<Map<String, List<Greeting>>> getGreetingsServer() async {
     try {
       Map<String, dynamic> data = queryDocumentSnapshot.data();
       greetings[data['category']]!.add(Greeting(
-          greetingID: data['ID'],
+          greetingID: int.parse(data['greetingID']),
           documentID: queryDocumentSnapshot.id,
-          content: data['content'],
-          recommend: data['recommend'],
+          content: data['contents'],
+          recommend: int.parse(data['recommend']),
           relation: data['relation'],
           category: data['category']));
-      print("${data['ID']}, ${cnt++}, ${queryDocumentSnapshot.id}");
+      print("${data['greetingID']}, ${cnt++}, ${queryDocumentSnapshot.id}");
     } catch (e) {
       print("error at ${queryDocumentSnapshot.id}");
     }
