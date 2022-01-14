@@ -37,7 +37,8 @@ class _MainScreenState extends State<MainScreen> {
           SizedBox(height: 10.0),
           Container(
             height: 35,
-            child: TextField(
+            child: TextFormField(
+              initialValue: searchStr,
               onChanged: (text) {
                 setState(() {
                   searchStr = text;
