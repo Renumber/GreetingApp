@@ -27,7 +27,7 @@ class Greeting {
       required this.category});
 
   void increaseRec() {
-    recommend++; //추후 변경 예정
+    recommend++;
     updateRecData();
   }
 
@@ -37,8 +37,8 @@ class Greeting {
   }
 
   Future<void> updateRecData() async {
-    return await FirebaseFirestore.instance.collection('greetingData2').doc(documentID).update({
-      'recommend': recommend,
+    return await FirebaseFirestore.instance.collection('GreetingData2').doc(documentID).update({
+      'recommend': "$recommend",
     });
   }
 

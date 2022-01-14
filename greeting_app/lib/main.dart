@@ -15,7 +15,7 @@ void main() async {
   await Firebase.initializeApp();
   Map<String, List<Greeting>> greetings = await getGreetingsServer();
   List<String> favoriteIndexes = await getFavoriteFromSP();
-  print("finfin");
+
   runApp(
     MultiProvider(
       providers: [
@@ -51,7 +51,7 @@ Future<Map<String, List<Greeting>>> getGreetingsServer() async {
       print("error at ${queryDocumentSnapshot.id}");
     }
   }
-  print("fin");
+  print("finish load");
   return greetings;
 }
 
